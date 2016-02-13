@@ -1,1 +1,0 @@
-This is sample project that shows the login page  

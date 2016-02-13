@@ -1,0 +1,93 @@
+h1.logheader{
+    
+    color:black;
+    
+}
+
+
+#lname{
+    
+    font-size:15px;
+    
+    font-family:italic;
+    margin-right:85px; 
+    
+}
+
+#lpass{
+    
+    font-size:15px;
+    font-family:italic;
+    margin-right:85px; 
+    
+}
+
+
+#loginbody{
+
+    background-color:yellow;
+}
+
+
+
+.txtlogin{
+
+    width:300px;
+    height:300px;
+    
+    background:lightblue;
+    border:50px 50px 50px 50px;
+    border-width:5px;
+    border-color:black;
+    border-style:solid;
+    
+    margin:15px 15px 15px 15px;
+    
+}
+
+.txtlogin:hover{
+    background:lightyellow;
+}
+
+#user_name{
+    
+    width:200px;
+    height:30px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#user_pass{
+    
+    width:200px;
+    height:30px;
+    margin-top:10px;
+    margin-bottom:-20px;
+}
+
+
+#submit{
+
+    width:100px;
+    height:50px;
+    margin-top:45px;
+    margin-left:30px;
+}
+
+#submit:hover{
+    background-color:lightblue;
+}
+
+
+#exit{
+
+    width:100px;
+    height:50px;
+    margin-top:45px;
+    margin-right:25px;
+}
+
+#exit:hover{
+    background-color:lightblue;
+}
+

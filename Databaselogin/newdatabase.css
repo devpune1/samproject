@@ -1,0 +1,74 @@
+
+.databasetxt{
+    
+    width:500px;
+    height:200px;
+    
+    background:lightblue;
+    border:50px 50px 50px 50px;
+    border-width:5px;
+    border-color:black;
+    border-style:solid;
+    margin-top:100px;
+    margin-left:100px;
+    
+}
+
+
+
+.lpass{
+    
+    font-size:15px;
+
+    margin-top:100px;
+    margin-right:100px;
+    
+}
+
+.lcpass{
+    font-size:15px;
+    font-family:italic;
+    border-top:20px;
+    margin-right:10px; 
+    
+    
+}
+
+.lcpasstxt{
+    margin-top:15px;
+    
+}
+
+.lpasstxt{
+    
+    margin-top:15px;
+}
+
+
+.btndone{
+    width:100px;
+    height:50px;
+    margin-top:45px;
+    margin-right:25px;
+}
+
+.btncancle{
+    
+    width:100px;
+    height:50px;
+    margin-top:45px;
+    margin-right:25px;
+}
+
+.subframe{
+    
+    color:black;
+    background-color:white;
+    margin-top:10px;
+    margin-left:100px;
+    align:center;
+    width:500px;
+    height:50px;
+    border-width:5px;
+    border-bottom-color:black;
+}
