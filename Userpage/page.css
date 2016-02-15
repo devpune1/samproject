@@ -1,4 +1,7 @@
-
+html{
+    
+    background: url(image1.jpg) ;
+}
 
 
 
@@ -7,16 +10,18 @@
    position:relative;
    width:500px;
    height:500px;
-   background-color:yellow;
+   background-color:lightblue;
    border:50px 50px 50px 50px;
    border-style:solid;
    border-width:5px;
+   margin-right:250px;
+   margin-left:250px;
+   
 }
 
-.new:hover{
-    background-color:lightblue;
+
     
-}
+
 
 .button{
     font-family:sans-serif;

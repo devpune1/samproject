@@ -1,3 +1,11 @@
+
+html{
+    
+    
+    background:url(log.jpg) ;
+    
+}
+
 h1.logheader{
     
     color:black;
@@ -23,10 +31,7 @@ h1.logheader{
 }
 
 
-#loginbody{
 
-    background-color:yellow;
-}
 
 
 
@@ -46,7 +51,7 @@ h1.logheader{
 }
 
 .txtlogin:hover{
-    background:lightyellow;
+   
 }
 
 #user_name{
@@ -91,3 +96,9 @@ h1.logheader{
     background-color:lightblue;
 }
 
+
+.subframe{
+    
+    
+    width:500px;
+}
