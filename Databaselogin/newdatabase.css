@@ -1,6 +1,14 @@
 
+html{
+    
+    background:url(data.jpg);
+}
+
+
+
 .databasetxt{
     
+    position:fixed;
     width:500px;
     height:200px;
     
@@ -10,13 +18,16 @@
     border-color:black;
     border-style:solid;
     margin-top:100px;
-    margin-left:100px;
+    margin-left:390px;
+    margin-right:250px;
+    
     
 }
 
 
 
 .lpass{
+   
     
     font-size:15px;
 
@@ -26,6 +37,7 @@
 }
 
 .lcpass{
+   
     font-size:15px;
     font-family:italic;
     border-top:20px;
@@ -58,17 +70,21 @@
     height:50px;
     margin-top:45px;
     margin-right:25px;
+    margin-left:25px;
 }
 
 .subframe{
-    
-    color:black;
+   
+   position:fixed;
+    color:red;
     background-color:white;
-    margin-top:10px;
-    margin-left:100px;
-    align:center;
+    margin-top:330px;
+   
+    margin-left:390px;
+    background-color:lightblue;
     width:500px;
-    height:50px;
+    height:150px;
     border-width:5px;
     border-bottom-color:black;
+    
 }
