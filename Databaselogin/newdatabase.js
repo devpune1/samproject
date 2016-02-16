@@ -2,11 +2,7 @@ function countPasswordLen()
 {
     
     
-    
-    
-    
 }
-
 
 
 function passwordS()
@@ -20,7 +16,7 @@ function passwordS()
     {
         
         alert("strong password");
-        
+        savepage();
         
     }
     else
@@ -30,13 +26,13 @@ function passwordS()
         {
             
             alert("medim password");
-            
+            savepage();
             
         }
         else
         {
             
-            alert("poor password");
+            alert(" \"poor password \" please enter strong password");
         
         }
     
@@ -51,4 +47,10 @@ function display()
     
     
     alert("hello");
+}
+
+function savepage(){
+    
+    
+    window.location.href="../Savedetails/savedetails.html"
 }
