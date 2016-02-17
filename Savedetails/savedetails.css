@@ -1,9 +1,16 @@
-head{
+html{
+    
+    background-image:url(image1.jpg);
+}
+   
+
+
+h1{ 
     
     font-family:"time Roman"serif;
     font-size:40px;
- 
-    
+
+    color:blue;
     
 }
 
