@@ -1,0 +1,144 @@
+
+html{
+    
+    
+    background:url(log.jpg) ;
+    
+}
+
+h1.logheader{
+    margin-top:15px;
+    color:#0000FF;
+  
+}
+
+.p{
+    
+    font-size:60px;
+    font-family:sans-serif;
+    
+}
+
+
+
+
+.txtlogin{
+
+    position:static;
+    width:300px;
+    height:350px;
+    
+    background:lightblue;
+    border:auto;
+    border-width:5px;
+    border-color:black;
+    border-style:solid;
+    margin:auto;
+       
+
+    
+}
+
+
+#lname{
+    
+    font-size:15px;
+    color:black;
+    margin-right:115px; 
+
+}
+
+#lpass{
+    
+    color:black;
+    font-size:15px;
+    margin-right:115px;
+    
+    
+}
+
+
+
+
+
+
+#user_name{
+        width:200px;
+    height:30px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#user_pass{
+    
+    
+    width:200px;
+    height:30px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+
+#submit{
+    
+    font-size:20px;
+    color:black;
+    width:100px;
+    height:50px;
+    margin-top:15px;
+    margin-left:30px;
+
+    
+}
+
+#submit:hover{
+    
+    background-color:lightblue;
+}
+
+
+#exit{
+    
+    font-size:20px;
+    color:black;
+    width:100px;
+    height:50px;
+    margin-top:15px;
+    margin-right:35px;
+    margin-bottom:40px;
+    
+}
+
+#exit:hover{
+    
+    background-color:lightblue;
+
+}
+
+
+
+
+.newregister{
+    
+    color:black;
+    
+    font-size:25px;
+  
+  
+}
+
+
+.newregister:hover{
+    
+    color:blue;
+    text-decoration:underline;
+    
+}
+
+
+  
+input:required:invalid, input:focus:invalid {
+          
+        -moz-box-shadow: red;
+        
+    }

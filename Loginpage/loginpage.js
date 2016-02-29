@@ -2,15 +2,15 @@
 
 
 
-function reloadPage()
-{
+function reloadPage(){
     
      setTimeout(function () { location.reload(true); }, 500);
     
 }
 
-function clearPage()
-{
+
+
+function clearPage() {
     
     document.getElementById("user_name").value="";
     document.getElementById("user_pass").value="";
@@ -18,69 +18,55 @@ function clearPage()
 }
 
 
-function userReloadedPage()
-{
+
+
+
+function isEmpty(userData){
     
+    if(userData===""){
         
-        clearPage();
-    
-    
-    
-}
-
-
-function isEmpty(userdata)
-{
-    
-    if(userdata=="")
-    {
         return false;
         
     }
-    else
-    {
+    
+    else{
         
         return true;
     }
     
 }
 
-function userDetail()
-{
+function userDetail(){
   
     var userName=document.getElementById("user_name").value;
     
-    var userPass=document.getElementById("user_pass").value.replace(userPass,'*');
-     
+    var userPass=document.getElementById("user_pass").value;
     
     
-    if(isEmpty(userName)==true && isEmpty(userPass)==true)
-    {
+    if(isEmpty(userName)===true && isEmpty(userPass)===true){
         
                 
-            if(userName==="asd" && userPass==="asd")
-            {
+            if(userName==="asd" && userPass==="asd"){
             
                 alert("Your are WELCOMED");
                 
                 clearPage();
+              
                 window.location.href="../Userpage/userpage.html";
             
-            }    
-            else
-            {
+            }   
+            
+            else{
             
                 alert("Your Not \"Authorized User\" ");
-                reloadPage();
+            		clearPage();
             }
         
        
     }
-    else
-    {
+    else{
         
-        if(isEmpty(userName==false) )
-        {
+        if( isEmpty(userName) ===false ){
             
                 document.getElementById("user_name").placeholder="please enter the name";
                 document.getElementById("user_name").style.borderWidth="2px";
@@ -89,7 +75,7 @@ function userDetail()
                 reloadPage();
         }   
         
-           if(isEmpty(userPass==false))
+           if( isEmpty(userPass) === false)
            {
                  document.getElementById("user_pass").placeholder="please enter password here";
                  document.getElementById("user_pass").textContent.color="black";
@@ -107,18 +93,14 @@ function userDetail()
 }   
 
 
-function onClosed()
-{
+function onClosed(){
     
-    
-    close();
+ close();
     
 }
 
 
-function newRegister()
-{
-    
+function newRegister(){
     
     window.location.href="../Loginpage/Registrationpage/registration.html";
 }

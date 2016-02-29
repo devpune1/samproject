@@ -1,3 +1,10 @@
+body{
+    
+    margin:0;
+    padding:0;
+    
+}
+
 
 html{
     
@@ -5,10 +12,11 @@ html{
 }
 
 
+body{ margin: 0; padding: 0; }
 
 .databasetxt{
     
-    position:fixed;
+    position:relative;
     width:500px;
     height:200px;
     
@@ -17,9 +25,7 @@ html{
     border-width:5px;
     border-color:black;
     border-style:solid;
-    margin-top:100px;
-    margin-left:390px;
-    margin-right:250px;
+    margin : 0 auto;
     
     
 }

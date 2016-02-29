@@ -1,11 +1,12 @@
 
     
  <!DOCTYPE html>
+
 <html>
 
-    <head> <h1 class="logheader" align="center" > LOGIN PAGE </head>
+    <head> <h1 class="logheader" align="center" > LOGIN PAGE </h1> </head>
     
-     <link rel="stylesheet" type="text/css" href="loginpage.css"/>
+     <link rel="stylesheet" type="text/css" href="log.css"/>
       <script type="text/javascript" src="loginpage.js"></script>
 
    
@@ -13,28 +14,28 @@
     <body id="loginbody" onbeforeunload="userReloadedPage()">
         
 
-        <form class="loginform" >
+        <form class="loginform">
  
             
            <div align="center" class="txtlogin">
              
                <label id="lname"> USER NAME: </label>
                
-                 <input id="user_name" type="text" data-toggle="tooltip" title="Enter the name in form of Alphabates" name="username" placeholder="Enter name here" autofocus="true"/>
+                 <input id="user_name" type="text" data-toggle="tooltip" title="Enter the name in form of Alphabates" name="username" placeholder="Enter name here" autofocus="true" required/>
             
                 <label id="lpass">PASSWORD:</label>
-                <input id="user_pass" type="password" style="-webkit-text-security: square;" data-toggle="tooltip" title="Enter password in form of nu" name="password" placeholder="Enter password here" autofocus="false"/>
+                <input id="user_pass" type="password" style="-webkit-text-security: square;" data-toggle="tooltip" title="Enter password in form of nu" name="password" placeholder="Enter password here" autofocus="false" required/>
           
                   
                  <input type="button" id="submit" data-toggle="tooltip" title="Submit Button" value="SUBMIT" onclick="userDetail()" > </input>
                  
                  <input type="button" id="exit" data-toggle="tooltip" title="Exit Button" value="EXIT" onclick="onClosed()"  > </input> 
                
-                 <label class="newregister" onclick="newRegister()"><h6>Register Here</h6></label>            
+                 <label class="newregister" onclick="newRegister()">Register Here</label>            
                 
             </div>
         
-               <p >enter user name and password = asd to login</p>
+               <p>enter user name and password = asd to login </p>
        
         </form>
         

@@ -2,32 +2,39 @@
  <hmtl>
     
          <head>
+        <meta charset="utf-8">
              <h1 align="center" color="blue">
                  REGISTRATION 
              </h1>
+             
              <link rel="stylesheet" href="registration.css"></link>
+             <script type="text/javascript" src="registration.js"></script>
          </head>
          
      <body>
             
-         <form>
+      
+                 <form>
              
-             <div class="register">
-              
-             <input class="registertxt" type="text" data-toggle="tooltip" title="Enter your name" autofocus="true" placeholder=" Enter your user name" />
+                 <div class="register">
+                  
+                 <input id="nametxt" type="text" data-toggle="tooltip" title="Enter your name" autofocus="true" placeholder=" Enter your user name" required/>
              
-             <input  class="registertxt" type="text" data-toggle="tooltip" title="Enter your password" placeholder=" Enter your password"/>
-             <input  class="registertxt" type="text" data-toggle="tooltip" title="Enter your confirmation password" placeholder=" Enter  to confirm Password"/>
-             <input  class="registertxt" type="text" data-toggle="tooltip" title="Enter your email address" placeholder=" Enter email address"/>
-             <input  class="registertxt" type="text" data-toggle="tooltip" title="Enter your mobile number" placeholder=" Enter Mobile Number"/>
+                 <input  id="passtxt" type="text" data-toggle="tooltip" title="Enter your password" placeholder=" Enter your password" required/>
+                 <input id="cpasstxt" type="text" data-toggle="tooltip" title="Enter your confirmation password" placeholder=" Enter  to confirm Password" required/>
+                 <input  id="emailtxt" type="text" data-toggle="tooltip" title="Enter your email address" placeholder=" Enter email address" required/>
+                 
+                 <input  id="mobiletxt" type="text" data-toggle="tooltip" title="Enter your mobile number" placeholder=" Enter Mobile Number" required/>
             
-             <input class="regSubmit" data-toggle="tooltip" title="Click on submit"type="BUTTON" value="Register"/>
-             <input class="regClose" data-toggle="tooltip" title="Click to cancel mname"type="BUTTON" value="Close"/>
+                 <input class="regSubmit" data-toggle="tooltip" title="Click on submit" onclick="clickRegister()" type="BUTTON" value="Register"/>
+                 <input class="regClose" data-toggle="tooltip" title="Click to cancel" type="BUTTON" value="Close"/>
+                
              
-            </div>
              
+                </div>
              
-         </form>
+             </form>  
+         
          
     </body>
      

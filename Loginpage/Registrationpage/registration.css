@@ -1,7 +1,13 @@
+
+h1{
+    
+    position:relative;
+    margin-left:200px;
+}
+
 .register{
     
- 
- position:fixed;
+ position:static;
  
  width:350px;
  height:470px;
@@ -10,12 +16,13 @@ background-color:lightblue;
  border-style:solid;
  border-color:black;
  border-width:5px;
-   margin-left:500px;
+   margin-left:200px;
+   margin-right:500px;
 }
 
 
-.registertxt{
-    
+input{
+
     width:200px;
     height:40px;
     margin-top:30px;
@@ -27,8 +34,7 @@ background-color:lightblue;
 {
     
     
-    data-toggle:tooltip;
-    title:"CLICK HERE TO SUBMIT";
+   
     font-size:20px;
     color:black;
     width:100px;
@@ -59,4 +65,11 @@ background-color:lightblue;
     .regClose:hover{
         
         background:lightgrey;
+    }
+    
+    
+    input:required:invalid, input:focus:invalid {
+          
+          content:"hello";
+  -moz-box-shadow: red;
     }
