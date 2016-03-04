@@ -9,8 +9,8 @@ h1{
     
  
  position:static;
- width:600px;
- height:600px;
+ width:700px;
+ height:570px;
 
 background-color:lightblue;
  border-style:solid;
@@ -25,20 +25,22 @@ background-color:lightblue;
 
 
 #password{
-
+  
+  
+  
     width:250px;
     height:30px;
     margin-top:60px;
-       margin-left:150px;
+       margin-left:190px;
   
    
 }
 #name{
-
+     
     width:250px;
     height:30px;
     margin-top:60px;
-   margin-left:150px;
+   margin-left:190px;
   
 }
 
@@ -51,7 +53,7 @@ background-color:lightblue;
     width:250px;
     height:30px;
     margin-top:60px;
-    margin-left:150px;
+    margin-left:190px;
   
 }
 
@@ -60,7 +62,7 @@ background-color:lightblue;
     width:250px;
     height:30px;
     margin-top:60px;
-    margin-left:150px;
+    margin-left:190px;
    
   
 }
@@ -70,7 +72,7 @@ background-color:lightblue;
     width:250px;
     height:30px;
     margin-top:60px;
-    margin-left:150px;
+    margin-left:190px;
     
   
     
@@ -87,7 +89,7 @@ background-color:lightblue;
     height:50px;
     
     margin-top:30px;
-    margin-left:150px;
+    margin-left:183px;
     
 }
 
@@ -115,4 +117,30 @@ background-color:lightblue;
     }
     
   
-    
+  
+  label{
+      
+      visibility:hidden;
+      font-size:20px;
+      color:red;
+      background-color:black;
+      overflow:hidden;
+      
+      border-radius:16px;
+      
+      
+  }
+  
+  label:after{
+      right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+  }
+  
+  
+   

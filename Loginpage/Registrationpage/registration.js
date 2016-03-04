@@ -41,7 +41,8 @@ function clickRegister() {
         if(temp==null||temp=="")
         {
              document.getElementById(setLabel[i]).innerHTML=" Cannot Be Empty ";
-             document.getElementById(setLabel[i]).style.color="red";
+             document.getElementById(setLabel[i]).style.visibility="visible";
+             
            //document.getElementById(detail[i]).placeholder=detail[i].toUpperCase()+" field cannot be empty  ";
              document.getElementById(detail[i]).placeholder="";
            
@@ -57,12 +58,14 @@ function clickRegister() {
     
     if(!validateString(regname) && !isFiledEmpty(regname)){
         
-         document.getElementById("name").value="";
+                    document.getElementById("name").value="";
                     document.getElementById("name").placeholder="";
                     document.getElementById("name").style.borderColor="red";
                     
                     document.getElementById("nametxt").innerHTML=" Only Characater Required";
-                    document.getElementById("nametxt").style.color="red";            
+                    document.getElementById("nametxt").style.color="red";
+                    document.getElementById("nametxt").style.visibility="visible";
+                    
                 count=count+1;
         
         
@@ -82,10 +85,12 @@ function clickRegister() {
                     document.getElementById("mobile").style.borderColor="red";
                     
                     
-                    //document.getElementById("mobiletxt").style.visibility= "visible";
-                    //document.getElementById("mobiletxt").style.display="block";
+                  
                     document.getElementById("mobiletxt").innerHTML=" Only number are accepted";
-                    document.getElementById("mobiletxt").style.color="red";            
+                    document.getElementById("mobiletxt").style.color="red";
+                    document.getElementById("mobiletxt").style.visibility="visible";
+                
+                
                 count=count+1;
     }
     
@@ -98,26 +103,31 @@ function clickRegister() {
             if(!validatePassword( regpassword ) && !isFiledEmpty(regpassword)){    
         
                 document.getElementById("password").value="";
-               document.getElementById("passwordtxt").placeholder="Password Must Have 8 Charater";
-               document.getElementById("password").style.borderColor="red";
+                document.getElementById("passwordtxt").placeholder="";
+                document.getElementById("passwordtxt").innerHTML="TOO Small Password";
+                document.getElementById("password").style.borderColor="red";
+                document.getElementById("passwordtxt").style.visibility="visible";
                
-                document.getElementById("confirmpassword").value="";
+               document.getElementById("confirmpassword").value="";
                document.getElementById("confirmpasswordtxt").placeholder="Password Must have 8 Character";
-               document.getElementById("password").style.borderColor="red";
-               
+               document.getElementById("confirmpasswordtxt").innerHTML="TOO Small Password";           
+               document.getElementById("confirmpasswordtxt").style.visibility="visible";
+                
                 count=count+1; 
       
             }
             else {
                 
                    document.getElementById("password").value="";
-               document.getElementById("passwordtxt").placeholder="NO Match ";
-               document.getElementById("passwordtxt").style.borderColor="red";
-            
+                  document.getElementById("passwordtxt").placeholder="NO Match ";
+                  document.getElementById("passwordtxt").style.borderColor="red";
+                  document.getElementById("passwordtxt").style.visibility="visible";
+               
+               
                   document.getElementById("confirmpassword").value="";
                   document.getElementById("confirmpasswordtxt").placeholder="NO Match";
                   document.getElementById("confirmpasswordtxt").style.borderColor="red";
-                     
+                document.getElementById("confirmpassword").style.visibility="visible";   
             count=count+1;    
                 
             }
@@ -140,34 +150,40 @@ function clickRegister() {
                document.getElementById("passwordtxt").innerHTML="NO Match";
                document.getElementById("password").style.borderColor="red";
                document.getElementById("passwordtxt").style.color="red";            
+               document.getElementById("passwordtxt").style.visibility="visible";
+               
                
                document.getElementById("confirmpassword").value="";
                document.getElementById("confirmpassword").placeholder="NO Match";
                document.getElementById("confirmpassword").style.borderColor="red";
                document.getElementById("confirmpasswordtxt").style.color="red";
                document.getElementById("confirmpasswordtxt").innerHTML="NO MATCH";
+               document.getElementById("confirmpasswordtxt").style.visibility="visible";
+               
                count=count+1;
                      
         }
     
     }
-    else
-    {
+    else{
         
                      document.getElementById("password").value="";
                      document.getElementById("password").placeholder="";
                      document.getElementById("passwordtxt").innerHTML="Password Not Match ";
                      document.getElementById("password").style.borderColor="red";
                      document.getElementById("passwordtxt").style.color="red";
+                     document.getElementById("passwordtxt").style.visibility="visible";            
+             
+             
              
                       document.getElementById("confirmpassword").value="";
                       document.getElementById("confirmpassword").placeholder="";
                       document.getElementById("confirmpasswordtxt").placeholder="Password Not Match";
                       document.getElementById("confirmpasswordtxt").style.color="red";
                       document.getElementById("confirmpassword").style.borderColor="red";
-               
-        count=count+1;
-    }
+                      document.getElementById("confirmpasswordtxt").style.visibility="visible";
+         count=count+1;
+     }
     
 /*email valiation*/
 
@@ -180,7 +196,7 @@ function clickRegister() {
                 
                      document.getElementById("emailtxt").innerHTML="Enter vaild email address";
                      document.getElementById("emailtxt").style.color="red";
-               
+                     document.getElementById("emailtxt").style.visibility="visible";  
                 
                 count=count+1;
     
