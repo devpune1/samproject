@@ -7,42 +7,87 @@ h1{
 
 .register{
     
- position:static;
  
- width:350px;
- height:470px;
+ position:static;
+ width:600px;
+ height:600px;
 
 background-color:lightblue;
  border-style:solid;
  border-color:black;
  border-width:5px;
-   margin-left:200px;
-   margin-right:500px;
+   margin-left:400px;
+   margin-right:600px;
+   
+   
 }
 
 
-input{
 
-    width:200px;
-    height:40px;
-    margin-top:30px;
-    margin-left:70px;
+#password{
+
+    width:250px;
+    height:30px;
+    margin-top:60px;
+       margin-left:150px;
+  
+   
+}
+#name{
+
+    width:250px;
+    height:30px;
+    margin-top:60px;
+   margin-left:150px;
+  
+}
+
+
+
+
+
+#confirmpassword{
+
+    width:250px;
+    height:30px;
+    margin-top:60px;
+    margin-left:150px;
+  
+}
+
+#email{
+
+    width:250px;
+    height:30px;
+    margin-top:60px;
+    margin-left:150px;
+   
+  
+}
+
+#mobile{
+
+    width:250px;
+    height:30px;
+    margin-top:60px;
+    margin-left:150px;
+    
+  
     
 }
+
 
 .regSubmit
 {
-    
-    
-   
+     position:relative;
+
     font-size:20px;
     color:black;
     width:100px;
     height:50px;
-    margin-top:45px;
-    margin-left:50px;
     
-    
+    margin-top:30px;
+    margin-left:150px;
     
 }
 
@@ -54,10 +99,12 @@ input{
 .regClose
 {
     font-size:20px;
+    
     color:black;
     width:100px;
     height:50px;
-    margin-top:45px;
+    padding:7px;
+    margin-top:15px;
     margin-left:50px;
     }
     
@@ -67,9 +114,5 @@ input{
         background:lightgrey;
     }
     
+  
     
-    input:required:invalid, input:focus:invalid {
-          
-          content:"hello";
-  -moz-box-shadow: red;
-    }

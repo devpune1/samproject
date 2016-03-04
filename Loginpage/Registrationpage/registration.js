@@ -1,53 +1,208 @@
+ 
 
-/*
+
 function isFiledEmpty( filedData ) {
     
     if(filedData==""){
         
-        return false;
+        return true;
     }
     else{
     
-         return true;
+         return false;
 
     }
 }
-*/
 
 function clickRegister() {
-    
 
-    var regname=document.getElementById("nametxt").value;
-   var regpassword=document.getElementById("passtxt").value;
-   // var regcpassword=document.getElementById("cpasstxt").value;
-   // var regemail=document.getElementById("emailtxt").value;
-  var regmobile=document.getElementById("mobiletxt").value;
+//document.getElementById("nametxt").innerHTML="asds";
+
+
+    var detail=["name","password","confirmpassword","email","mobile"];
+    var setLabel=["nametxt","passwordtxt","confirmpasswordtxt","emailtxt","mobiletxt"];
+    var count=0;
+   
+        
+        
+        var regname=document.getElementById("name").value;
+  
+    var regemail=document.getElementById("email").value;
+
+     var regpassword=document.getElementById("password").value;
+   var regcpassword=document.getElementById("confirmpassword").value;
+  var regmobile=document.getElementById("mobile").value;
     
-    validateString(regname);
-    if(validateString(regname) && validatePassword(regpassword) && validateNumber(regmobile)){
+    
+   
+    for(var i=0;i<detail.length;i++) {
+        var temp=document.getElementById(detail[i]).value;
         
-        
+        if(temp==null||temp=="")
+        {
+             document.getElementById(setLabel[i]).innerHTML=" Cannot Be Empty ";
+             document.getElementById(setLabel[i]).style.color="red";
+           //document.getElementById(detail[i]).placeholder=detail[i].toUpperCase()+" field cannot be empty  ";
+             document.getElementById(detail[i]).placeholder="";
            
-                     
-                     document.getElementById("nametxt").style.borderWidth="1px";
-                    document.getElementById("nametxt").style.borderStyle="solid";
-                     document.getElementById("nametxt").style.borderColor="lightgreen";
-        }           
-        else{
+             document.getElementById(detail[i]).style.borderColor="red";
+             document.getElementById(detail[i]).style.borderStyle="solid";
+            count=count+1;
+           
+        }
+     
         
-                          document.getElementById("nametxt").value="";
-                     document.getElementById("nametxt").placeholder="pls enter valid name";
+    }
+    
+    
+    if(!validateString(regname) && !isFiledEmpty(regname)){
+        
+         document.getElementById("name").value="";
+                    document.getElementById("name").placeholder="";
+                    document.getElementById("name").style.borderColor="red";
                     
-                     document.getElementById("nametxt").style.borderWidth="1px";
-                     document.getElementById("nametxt").style.borderColor="red";  
-                     document.getElementById("nametxt").style.borderStyle="solid";
+                    document.getElementById("nametxt").innerHTML=" Only Characater Required";
+                    document.getElementById("nametxt").style.color="red";            
+                count=count+1;
+        
+        
+        
+    }
+    
+    
+    
+   
+    
+    /*mobile number validation */
+    
+    if(!validateNumber(regmobile)&& !isFiledEmpty(regmobile)){           
+        
+                    document.getElementById("mobile").value="";
+                    document.getElementById("mobile").placeholder="";
+                    document.getElementById("mobile").style.borderColor="red";
+                    
+                    
+                    //document.getElementById("mobiletxt").style.visibility= "visible";
+                    //document.getElementById("mobiletxt").style.display="block";
+                    document.getElementById("mobiletxt").innerHTML=" Only number are accepted";
+                    document.getElementById("mobiletxt").style.color="red";            
+                count=count+1;
+    }
+    
+    /*password validation*/
+    
+    if(regpassword.length==regcpassword.length)
+    {
+        if( regpassword == regcpassword ){
             
+            if(!validatePassword( regpassword ) && !isFiledEmpty(regpassword)){    
+        
+                document.getElementById("password").value="";
+               document.getElementById("passwordtxt").placeholder="Password Must Have 8 Charater";
+               document.getElementById("password").style.borderColor="red";
+               
+                document.getElementById("confirmpassword").value="";
+               document.getElementById("confirmpasswordtxt").placeholder="Password Must have 8 Character";
+               document.getElementById("password").style.borderColor="red";
+               
+                count=count+1; 
+      
+            }
+            else {
+                
+                   document.getElementById("password").value="";
+               document.getElementById("passwordtxt").placeholder="NO Match ";
+               document.getElementById("passwordtxt").style.borderColor="red";
+            
+                  document.getElementById("confirmpassword").value="";
+                  document.getElementById("confirmpasswordtxt").placeholder="NO Match";
+                  document.getElementById("confirmpasswordtxt").style.borderColor="red";
+                     
+            count=count+1;    
+                
+            }
+    
+                if(!validatePassword(regcpassword) && !isFiledEmpty(regcpassword)){    
+        
+                    document.getElementById("confirmpassword").value="";
+                    document.getElementById("confirmpassword").placeholder="pls enter valid password";
+                    document.getElementById("confirmpassword").style.borderColor="red";
+                count=count+1; 
+      
+            }
+        }
+        
+        else{
+            
+            
+               document.getElementById("password").value="";
+               document.getElementById("passwordtxt").placeholder="";
+               document.getElementById("passwordtxt").innerHTML="NO Match";
+               document.getElementById("password").style.borderColor="red";
+               document.getElementById("passwordtxt").style.color="red";            
+               
+               document.getElementById("confirmpassword").value="";
+               document.getElementById("confirmpassword").placeholder="NO Match";
+               document.getElementById("confirmpassword").style.borderColor="red";
+               document.getElementById("confirmpasswordtxt").style.color="red";
+               document.getElementById("confirmpasswordtxt").innerHTML="NO MATCH";
+               count=count+1;
+                     
         }
     
-  
-}
+    }
+    else
+    {
+        
+                     document.getElementById("password").value="";
+                     document.getElementById("password").placeholder="";
+                     document.getElementById("passwordtxt").innerHTML="Password Not Match ";
+                     document.getElementById("password").style.borderColor="red";
+                     document.getElementById("passwordtxt").style.color="red";
+             
+                      document.getElementById("confirmpassword").value="";
+                      document.getElementById("confirmpassword").placeholder="";
+                      document.getElementById("confirmpasswordtxt").placeholder="Password Not Match";
+                      document.getElementById("confirmpasswordtxt").style.color="red";
+                      document.getElementById("confirmpassword").style.borderColor="red";
+               
+        count=count+1;
+    }
+    
+/*email valiation*/
 
+    if(!validateEmail(regemail) && !isFiledEmpty(regemail)){
+    
+        
+                     document.getElementById("email").value="";
+                     document.getElementById("email").placeholder="";
+                     document.getElementById("email").style.borderColor="red";
+                
+                     document.getElementById("emailtxt").innerHTML="Enter vaild email address";
+                     document.getElementById("emailtxt").style.color="red";
+               
+                
+                count=count+1;
+    
+    }
+    
+    
+    
+    
+    if(count==0){
+                
+             alert("THANKS FOR  REGISTRATION");
+            window.location.href="../loginpage.html";
+             
+            }
+            else{
+                
+                setTimeout(function(){window.location.reload(true)},500);
+            }
+    
+ }
 
+/*String vailidation funvtion*/
 
 function validateString(userString) {
     
@@ -57,47 +212,61 @@ function validateString(userString) {
 
     if(namepattern.test(userString))
     {
-                 var check=namepattern.test(userString);
+                
                  
                 return true;
     }
     else{   
     
-               check=namepattern.test(userString);
+            
                 
                 return false;
     }
     
+
+}
+
+/*email validation*/
+
+function validateEmail( userEmail ) {
+    
+    var emailpattern = /\S+@\S+\.\S+/;
+    
+    if(emailpattern.test(userEmail)){
+        
+        return true;
+        
+        
+    }
+    else{
+        
+        return false;
+    }
+    
+    
     
 }
 
-/*
-function validateEmail(){
-    
-    var emailpattern="";
-    
-    
-}
+/* mobile number  validation */
 
-*/
 function validateNumber(usernum){
     
     
-   // alert("hello");
-   
     var numberpattern=/^[978]{1}[0-9]{9}$/;
-    alert("number"+usernum.value);
+    
     
     if(numberpattern.test(usernum))
     {
         
-        alert("valid");
+     
+        return true;
+        
         
     }
     else
     {
-        alert("invalid "+numberpattern.test(usernum));
         
+        return false;
     }
     
 }
@@ -107,9 +276,9 @@ function validateNumber(usernum){
 
 function validatePassword(password){
     
-var passPassword=/^\w{6,8}$/;
 
-            
+var passPassword=/^\w{8}|^\d{8}$/;
+
 
         if(passPassword.test(password)){
     
@@ -126,3 +295,26 @@ var passPassword=/^\w{6,8}$/;
 }
 
 
+
+/*page reloading */
+
+function reloadPage(){
+    
+    
+    setTimeout(function () { location.reload(true); },500);
+}
+
+
+function moveToLogin()
+{
+    window.location.href="../loginpage.html";
+  
+}
+
+
+function setText()
+{
+    
+    document.getElementById("nametxt").value="empty"
+    
+}
