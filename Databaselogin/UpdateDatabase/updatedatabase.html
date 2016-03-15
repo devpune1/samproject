@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head><h1>Update Password</h1></head>
+    <link rel="stylesheet" href="updatedatabase.css" type="text/css"/>
+    <script type="text/javascript" src="updatedatabase.js"></script>
+    <body align="center">
+        
+        <form>
+        
+            <div class="databasetxt" align="center">
+                
+                
+              <div class="input">  <input align="center" data-tooltip="Custom tooltip text." data-tooltip-position="bottom" id="m_useroldpassword" type="password" placeholder="Enter Old Password Here" /><span class="tooltip">Enter Old Password Here </span><label id="labeloldpassword">*</label></div>
+               <div class="input">  <input align="center" id="m_userpassword" type="password" placeholder="Enter Password Here" /><span class="tooltip">Enter NEW Password Here</span><label id="labelpassword">*</label></div>
+                
+               <div class="input">  <input align="center" id="m_userconfirmpassword" type="password" placeholder="Enter Confirmation Password"/><span class="tooltip">Enter NEW Confirm Password Here</span><label id="labelconfirmpassword">*</label></div>
+              
+                 <input class="btndone" type="button" onclick="updatedMasterPassword()" value="DONE"></input>
+            
+                <input class="btncancle" type="button" onclick="display()" value="CANCEL"></input>
+             
+              </div>
+             
+             
+        </form>        
+        
+    </body>
+
+
+</html>

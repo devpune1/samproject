@@ -33,10 +33,7 @@ html{
 
 
 
-
-
-
-#m_userpassword{
+#m_useroldpassword{
 
 display:block;
  width:300px;
@@ -47,18 +44,40 @@ display:block;
 
 }
 
+#m_useroldpassword:hover{
+    
+    text-align:center;
+}
+
+
+#m_userpassword{
+
+display:block;
+ width:300px;
+    height:35px;
+    margin-top:0px;
+   margin-left:0px; 
+     
+
+}
+#m_userpassword:hover{
+    
+    text-align:center;
+}
+
+
 #m_userconfirmpassword{
     
 display:block;
  width:300px;
     height:35px;
-    margin-top:30px;
+    margin-top:0px;
    margin-left:0px;
 
 }
 #m_userconfirmpassword:hover{
     
-text-align:;
+text-align:center;
 
 }
 
@@ -111,9 +130,9 @@ text-align:;
 }
 
 
-/*
 
-labelconfi{
+
+#labeloldpassword{
 
         height:200px;
         width:200px;
@@ -125,16 +144,16 @@ labelconfi{
         color:red; 
         position:relative;				
        padding:5px;						
-        top:0px;
-        left:10px;
+        top:-30px;
+        left:225px;
         border-radius:5px;
-     
+      visibility:hidden;
     }
 
 
 
 
-    label:before {
+   #labeloldpassword:before {
         position:absolute;					
         left:-19px; 					
         									
@@ -145,7 +164,7 @@ labelconfi{
         border:8px solid transparent;
         z-index:1; 							
 }
-    label:after{
+   #labeloldpassword:after{
         position:absolute; 					
         left:-19px; 						    									
       	top:5px;
@@ -153,15 +172,72 @@ labelconfi{
         height:0;
         width:0;
         border:8px solid transparent;
-        z-index:1; 							
+        z-index:1; 	
+       
     }
 
-    label:before {
+    #labeloldpassword:before {
         border-right-color:black;			                    
        										
     }  
 
-    label:after {
+    #labeloldpassword:after {
+        
+        border-right-color:black;		
+        								
+    } 						
+
+
+#labeloldpassword:focus{
+
+        height:200px;
+        width:200px;
+        background-color:white;
+        border-top:10px;
+        
+        border:3px  solid #fff;
+        border-color:black; 
+        color:red; 
+        position:relative;				
+       padding:5px;						
+        top:-30px;
+        left:225px;
+        border-radius:5px;
+      visibility:hidden;
+    }
+
+
+
+
+   #labeloldpassword:before:focus {
+        position:absolute;					
+        left:-19px; 					
+        									
+        top:5px;
+        content:'';						
+        height:0;
+        width:0;
+        border:8px solid transparent;
+        z-index:1; 							
+}
+   #labeloldpassword:after:focus{
+        position:absolute; 					
+        left:-19px; 						    									
+      	top:5px;
+        content:''; 						
+        height:0;
+        width:0;
+        border:8px solid transparent;
+        z-index:1; 	
+       
+    }
+
+    #labeloldpassword:before:focus {
+        border-right-color:black;			                    
+       										
+    }  
+
+    #labeloldpassword:after:focus {
         
         border-right-color:black;		
         								
@@ -169,8 +245,6 @@ labelconfi{
 
 
 
-
-*/
 
 
 #labelpassword{
@@ -186,7 +260,7 @@ labelconfi{
         position:relative;				
        padding:5px;						
         top:-30px;
-        left:200px;
+        left:225px;
         border-radius:5px;
         visibility:hidden;     
      
@@ -241,9 +315,9 @@ labelconfi{
         border-color:black; 
         color:red; 
         position:relative;				
-       padding:5px;						
+        padding:5px;						
         top:-25px;
-        left:198px;
+        left:225px;
         border-radius:5px;
         visibility:hidden;
         
@@ -289,16 +363,51 @@ labelconfi{
 
 
 
+.input {
+    position: relative;
+   
+}
+
+.tooltip {
+    display: none;
+    padding: 20px;
 
 
+}
 
+.input:focus {
+    visibility: hidden;
+ 
+}
 
+.input:hover .tooltip {
+    
+    background:white;
+    border-radius:15px;
+    bottom:-15px;
+    color: black;
+    display: inline;
+    height:20px;
+    width:200px;
+   border-style: solid;
+       border-width:2px;
+        border-Color:black;   
+        left:-200px;
+    position: absolute;
+}
 
-
-
-
-
-
-
-
+.input:hover .tooltip:before {
+    
+    display:inline;
+    content:"";
+    position: absolute;
+    top:5px;
+    left:240px;
+    width:0px; 
+	height:0px; 
+	
+    border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 10px solid  black;
+}
 

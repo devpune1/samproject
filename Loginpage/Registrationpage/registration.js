@@ -1,4 +1,29 @@
- 
+
+      var registerDb= openDatabase('RegisterDatabase','1.0','Registraion Database',200000);  
+  
+    
+      
+        
+function insertData(userName,userPass,userConfirmPass,userEmail,userNumber){
+    
+    alert("Inserting Record");
+     
+ registerDb.transaction(function(tx) {
+    
+            alert("Done inserting wait");    
+        
+        tx.executeSql('INSERT INTO  register(reg_name,reg_password,reg_confirmpassword,reg_email,reg_mobile) values (?,?,?,?,?)',[userName,userPass,userConfirmPass,userEmail,userNumber]);
+    
+    alert("Record Inserted");
+    
+    
+     
+ });
+
+}
+
+
+
 
 
 function isFiledEmpty( filedData ) {
@@ -42,9 +67,7 @@ function clickRegister() {
         {
              document.getElementById(setLabel[i]).innerHTML=" Cannot Be Empty ";
              document.getElementById(setLabel[i]).style.visibility="visible";
-             
-           //document.getElementById(detail[i]).placeholder=detail[i].toUpperCase()+" field cannot be empty  ";
-             document.getElementById(detail[i]).placeholder="";
+         document.getElementById(detail[i]).placeholder="";
            
              document.getElementById(detail[i]).style.borderColor="red";
              document.getElementById(detail[i]).style.borderStyle="solid";
@@ -116,21 +139,24 @@ function clickRegister() {
                 count=count+1; 
       
             }
+            /*
             else {
                 
                    document.getElementById("password").value="";
-                  document.getElementById("passwordtxt").placeholder="NO Match ";
-                  document.getElementById("passwordtxt").style.borderColor="red";
+                    document.getElementById("password").placeholder="";
+                  document.getElementById("passwordtxt").innerHTML="Cannot Be Empty";
+                  //document.getElementById("passwordtxt").style.borderColor="red";
                   document.getElementById("passwordtxt").style.visibility="visible";
-               
+              
+                 
                
                   document.getElementById("confirmpassword").value="";
-                  document.getElementById("confirmpasswordtxt").placeholder="NO Match";
-                  document.getElementById("confirmpasswordtxt").style.borderColor="red";
-                document.getElementById("confirmpassword").style.visibility="visible";   
+                  document.getElementById("confirmpasswordtxt").placeholder="";
+                 document.getElementById("confirmpasswordtxt").innerHTML="Cannot Be Empty";
+                document.getElementById("confirmpasswordtxt").style.visibility="visible";   
             count=count+1;    
                 
-            }
+            }*/
     
                 if(!validatePassword(regcpassword) && !isFiledEmpty(regcpassword)){    
         
@@ -169,7 +195,7 @@ function clickRegister() {
         
                      document.getElementById("password").value="";
                      document.getElementById("password").placeholder="";
-                     document.getElementById("passwordtxt").innerHTML="Password Not Match ";
+                     document.getElementById("passwordtxt").innerHTML="Password Do Not Match ";
                      document.getElementById("password").style.borderColor="red";
                      document.getElementById("passwordtxt").style.color="red";
                      document.getElementById("passwordtxt").style.visibility="visible";            
@@ -178,7 +204,7 @@ function clickRegister() {
              
                       document.getElementById("confirmpassword").value="";
                       document.getElementById("confirmpassword").placeholder="";
-                      document.getElementById("confirmpasswordtxt").placeholder="Password Not Match";
+                      document.getElementById("confirmpasswordtxt").innerHTML="Password Do Not Match";
                       document.getElementById("confirmpasswordtxt").style.color="red";
                       document.getElementById("confirmpassword").style.borderColor="red";
                       document.getElementById("confirmpasswordtxt").style.visibility="visible";
@@ -202,14 +228,17 @@ function clickRegister() {
     
     }
     
-    
-    
-    
+
+ 
     if(count==0){
                 
+                
              alert("THANKS FOR  REGISTRATION");
-            window.location.href="../loginpage.html";
              
+               insertData(regname,regpassword,regcpassword,regemail,regmobile);    
+            
+             window.location.href="../loginpage.html";
+                            
             }
             else{
                 
@@ -328,9 +357,3 @@ function moveToLogin()
 }
 
 
-function setText()
-{
-    
-    document.getElementById("nametxt").value="empty"
-    
-}

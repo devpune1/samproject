@@ -1,23 +1,33 @@
 
+
+
 h1{
-    
+    font-size: 20px;
+    background-color:  lightyellow;
+    color:skyblue;
     position:relative;
     margin-left:200px;
+}
+
+
+html{
+    
+    background-image: url(log.jpg);
 }
 
 .register{
     
  
  position:static;
- width:700px;
- height:570px;
+ width:600px;
+ height:500px;
 
 background-color:lightblue;
  border-style:solid;
  border-color:black;
  border-width:5px;
    margin-left:400px;
-   margin-right:600px;
+   margin-right:400px;
    
    
 }
@@ -28,55 +38,75 @@ background-color:lightblue;
   
   
   
-    width:250px;
-    height:30px;
-    margin-top:60px;
-       margin-left:190px;
+    width:300px;
+    height:40px;
+    margin-top:30px;
+       margin-left:30px;
   
    
 }
+#password:focus{
+    text-align: center
+}
+
 #name{
      
-    width:250px;
-    height:30px;
-    margin-top:60px;
-   margin-left:190px;
+   width:300px;
+    height:40px;
+    margin-top:30px;
+   margin-left:30px;
   
 }
 
 
+#name:focus{
+    text-align: center;
+    text-decoration:lightblue;
+}
 
 
+#confirmpassword:focus{
+    text-align: center
+}
 
 #confirmpassword{
 
-    width:250px;
-    height:30px;
-    margin-top:60px;
-    margin-left:190px;
+     width:300px;
+    height:40px;
+    margin-top:30px;
+    margin-left:30px;
   
 }
 
+
+#email:focus{
+    text-align: center
+}
 #email{
 
-    width:250px;
-    height:30px;
-    margin-top:60px;
-    margin-left:190px;
+     width:300px;
+    height:40px;
+    margin-top:30px;
+    margin-left:30px;
    
   
+}
+
+#mobile:focus{
+    text-align: center;
+    
 }
 
 #mobile{
 
-    width:250px;
-    height:30px;
-    margin-top:60px;
-    margin-left:190px;
+     width:300px;
+    height:40px;
+    margin-top:30px;
+    margin-left:30px;
     
-  
-    
+
 }
+
 
 
 .regSubmit
@@ -89,7 +119,7 @@ background-color:lightblue;
     height:50px;
     
     margin-top:30px;
-    margin-left:183px;
+    margin-left:153px;
     
 }
 
@@ -116,7 +146,39 @@ background-color:lightblue;
         background:lightgrey;
     }
     
-  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+    
+ /* 
   
   label{
       
@@ -131,16 +193,60 @@ background-color:lightblue;
       
   }
   
-  label:after{
-      right: 100%;
-	top: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-  }
   
-  
-   
+*/
+
+
+
+label{
+
+        font-size: larger;
+        height:200px;
+        width:200px;
+        background-color:white;
+        border-top:10px;
+        
+        border:3px  solid #fff;
+        border-color:black; 
+        color:red; 
+        position:relative;				
+       padding:5px;						
+        top:0px;
+        left:10px;
+        border-radius:5px;
+        visibility:hidden;
+     
+    }
+
+    label:before {
+        position:absolute;					
+        left:-19px; 					
+        									
+        top:5px;
+        content:'';						
+        height:0;
+        width:0;
+        border:8px solid transparent;
+        z-index:1; 							
+}
+    label:after{
+        position:absolute; 					
+        left:-19px; 						    									
+      	top:5px;
+        content:''; 						
+        height:0;
+        width:0;
+        border:8px solid transparent;
+        z-index:1; 							
+    }
+
+    label:before {
+        border-right-color:black;			                    
+       										
+    }  
+
+    label:after {
+        
+        border-right-color:black;		
+        								
+    } 						

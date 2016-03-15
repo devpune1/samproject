@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html>
     <head><h1>NEW DATABASE</h1></head>
     <link rel="stylesheet" href="newdatabase.css" type="text/css" />
     <script type="text/javascript" src="newdatabase.js"></script>
@@ -9,17 +9,13 @@
         
             <div class="databasetxt" align="center">
                 
-                <label class="lpass">PASSWORD</label>
+                <input align="center" id="m_userpassword" type="password" placeholder="Enter Password Here" /><label id="labelpassword">*</label>
                 
-                <input id="lpasstxt" type="password" placeholder="Enter password" data-toggle="tooltip" title="enter password here" autofocus="true"></input>
-                
-                <label class="lcpass"> CONFIRM PASSWORD</label>
-                
-                <input class="lcpasstxt" placeholder="Re-Enter Passord to confirm" type="password" ></input>
+                <input align="center" id="m_userconfirmpassword" type="password" placeholder="Enter Confirmation Password"/><label id="labelconfirmpassword">*</label>
               
-                 <input class="btndone" type="button" onClick="passwordS()" value="DONE"></input>
+                 <input class="btndone" type="button" onclick="updatedMasterPassword()" value="DONE"></input>
             
-                <input class="btncancle" type="button" onClick="display()" value="CANCEL"></input>
+                <input class="btncancle" type="button" onclick="display()" value="CANCEL"></input>
              
               </div>
              
