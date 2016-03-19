@@ -1,57 +1,395 @@
 input{
-    
-    position:relative;
-    width:200px;
-    height:20px;
-    margin:10px 10px 10px 10px;
-    
+    display :block;
+    text-align:center;
+  width:300px;
+    height:40px;
+    margin-top:50px;
+    margin-left:50px;
+   
 }
 
 .saveaccount{
     
-      position:relative;
-    width:250px;
-    height:300px;
+     position:relative;
+     width:400px;
+     height:600px;
     
     background:lightblue;
-    border:50px 50px 50px 50px;
+
     border-width:5px;
     border-color:black;
     border-style:solid;
-    margin-top:100px;
-    margin-left:390px;
-    margin-right:250px;
-    
+   margin-left:35%;
+    margin-right:50%;
+
     
 }
 
 
+
 .save{
-    
+    display:block;
     font-size:20px;
     color:black;
     width:100px;
     height:50px;
-    margin-top:45px;
-    margin-left:30px;
+    margin-top:65px;
+    margin-left:60px;
 }
 
 
 .close{
     
-    
+    display:block;
     font-size:20px;
     color:black;
     width:100px;
     height:50px;
-   
+    margin-left:190px;
+   margin-top:-50px;
 
 
 }
 
 .note{
     
-    
-    width:200px;
-    height:30px;
+    display:inline;
+    width:300px;
+    height:60px;
 }
+
+.note:hover{
+    
+    text-align:center;
+}
+
+
+
+.input {
+    position: relative;
+   
+}
+
+.tooltip {
+    display: none;
+    padding: 20px;
+
+
+}
+
+
+
+.input:hover :blur{
+    
+    visibility:hidden;
+}
+
+
+.input:hover .tooltip {
+    
+    background:white;
+    border-radius:15px;
+    bottom:-15px;
+    color: black;
+    display: inline;
+    height:20px;
+    width:200px;
+   border-style: solid;
+      border-width:2px;
+    border-Color:black;   
+        
+        left:-210px;
+    position: absolute;
+}
+
+.input:hover .tooltip:before {
+    
+    display:inline;
+    content:"";
+    position: absolute;
+    top:5px;
+    left:240px;
+    width:0px; 
+	height:0px; 
+	
+    border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 10px solid  black;
+}
+
+
+
+
+
+
+#labelaccountname{
+    
+      position:relative;	
+    
+        height:200px;
+        width:200px;
+        background-color:white;
+        border-top:10px;
+      
+        border:2px solid #fff;
+        border-color:black; 
+        color:red; 
+        				
+        padding: 10px;		
+        top:-15px;
+        left:340px;
+        border-radius:6px;
+        visibility:hidden;
+        
+    }
+
+
+
+
+   #labelaccountname:before {
+        
+        
+        position:absolute;			
+        left:-19px; 					
+        									
+        top:5px;
+        content:'';						
+        height:0;
+        width:0;
+        border:8px solid transparent;
+        z-index:1; 							
+}
+   #labelaccountname:after{
+        
+        
+        position:absolute; 					
+        left:-19px; 						    									
+      	top:5px;
+        content:''; 						
+        height:0;
+        width:0;
+        border:8px solid transparent;
+        z-index:1; 	
+       
+    }
+
+    #labelaccountname:before {
+        border-right-color:black;			                    
+       										
+    }  
+
+    #labelaccountname:after {
+        
+        border-right-color:black;		
+        								
+    } 						
+
+
+
+				
+
+
+
+
+
+#labeluserid{
+    
+      position:relative;	
+    
+        height:200px;
+        width:200px;
+        background-color:white;
+        border-top:10px;
+      
+        border:2px solid #fff;
+        border-color:black; 
+        color:red; 
+        				
+            padding: 10px;			
+        top:-15px;
+        left:340px;
+        border-radius:6px;
+        visibility:hidden;
+        
+    }
+
+
+
+
+   #labeluserid:before {
+        
+        
+        position:absolute;			
+        left:-19px; 					
+        									
+        top:5px;
+        content:'';						
+        height:0;
+        width:0;
+        border:8px solid transparent;
+        z-index:1; 							
+}
+   #labeluserid:after{
+        
+        
+        position:absolute; 					
+        left:-19px; 						    									
+      	top:5px;
+        content:''; 						
+        height:0;
+        width:0;
+        border:8px solid transparent;
+        z-index:1; 	
+       
+    }
+
+    #labeluserid:before {
+        border-right-color:black;			                    
+       										
+    }  
+
+    #labeluserid:after {
+        
+        border-right-color:black;		
+        								
+    } 						
+
+
+
+				
+
+
+#labeluserpassword{
+    
+      position:relative;	
+    
+        height:200px;
+        width:200px;
+        background-color:white;
+        border-top:10px;
+      
+        border:2px solid #fff;
+        border-color:black; 
+        color:red; 
+        				
+        padding: 10px;		
+        top:-15px;
+        left:340px;
+        border-radius:6px;
+            visibility:hidden;
+        
+        
+    }
+
+
+
+
+   #labeluserpassword:before {
+        
+        
+        position:absolute;			
+        left:-19px; 					
+        									
+        top:5px;
+        content:'';						
+        height:0;
+        width:0;
+        border:8px solid transparent;
+        z-index:1; 							
+}
+   #labeluserpassword:after{
+        
+        
+        position:absolute; 					
+        left:-19px; 						    									
+      	top:5px;
+        content:''; 						
+        height:0;
+        width:0;
+        border:8px solid transparent;
+        z-index:1; 	
+       
+    }
+
+    #labeluserpassword:before {
+        border-right-color:black;			                    
+       										
+    }  
+
+    #labeluserpassword:after {
+        
+        border-right-color:black;		
+        								
+    } 						
+
+
+
+				
+	
+
+
+#labelusernote{
+    
+      position:relative;	
+    
+        height:200px;
+        width:200px;
+        background-color:white;
+        border-top:10px;
+      
+        border:2px solid #fff;
+        border-color:black; 
+        color:red; 
+        				
+       padding: 10px;		
+        top:-15px;
+        left:340px;
+        border-radius:6px;
+        visibility:hidden;
+    }
+
+
+
+
+   #labelusernote:before {
+        
+        
+        position:absolute;			
+        left:-19px; 					
+        									
+        top:5px;
+        content:'';						
+        height:0;
+        width:0;
+        border:8px solid transparent;
+        z-index:1; 							
+}
+   #labelusernote:after{
+        
+        
+        position:absolute; 					
+        left:-19px; 						    									
+      	top:5px;
+        content:''; 						
+        height:0;
+        width:0;
+        border:8px solid transparent;
+        z-index:1; 	
+       
+    }
+
+    #labelusernote:before {
+        border-right-color:black;			                    
+       										
+    }  
+
+    #labelusernote:after {
+        
+        border-right-color:black;		
+        								
+    } 						
+
+
+
+							
+				

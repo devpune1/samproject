@@ -292,6 +292,63 @@ labelconfi{
 
 
 
+.input {
+    position: relative;
+   
+}
+
+.tooltip {
+    display: none;
+    padding: 20px;
+
+
+}
+
+.input:focus {
+    
+ visibility:visible;
+ 
+}
+
+.input:hover :blur{
+    
+    visibility:hidden;
+}
+
+
+.input:hover .tooltip {
+    
+    background:white;
+    border-radius:15px;
+    bottom:-15px;
+    color: black;
+    display: inline;
+    height:20px;
+    width:200px;
+   border-style: solid;
+       border-width:2px;
+        border-Color:black;   
+        left:-200px;
+    position: absolute;
+}
+
+.input:hover .tooltip:before {
+    
+    display:inline;
+    content:"";
+    position: absolute;
+    top:5px;
+    left:240px;
+    width:0px; 
+	height:0px; 
+	
+    border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 10px solid  black;
+}
+
+
+
 
 
 

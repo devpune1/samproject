@@ -81,9 +81,9 @@ function accessUserDetail(){
                                         {
                                              alert("Your are WELCOMED");
                                          
-                                               window.location.href="../Userpage/userpage.html"
-                                                    
-                                                 break; 
+                                               window.location.href="../Userpage/userpage.html";
+                                                    break;
+                                                 
                                         }
                                         else{
                                              
@@ -91,18 +91,18 @@ function accessUserDetail(){
                                              {
                                                 alert("User name or Password is Incorrect");
                                             
-                                                break;
+                                              
+                                          reloadPage();
+                                         
                                              }
                                         }
                                     }                                
             }, null);
          });
     
-    reloadPage();
+
+
 }
-
-
-
 
 function onClosed(){
     

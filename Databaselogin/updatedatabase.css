@@ -376,9 +376,16 @@ text-align:center;
 }
 
 .input:focus {
-    visibility: hidden;
+    
+ visibility:visible;
  
 }
+
+.input:hover :blur{
+    
+    visibility:hidden;
+}
+
 
 .input:hover .tooltip {
     

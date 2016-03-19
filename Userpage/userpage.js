@@ -18,7 +18,14 @@ function newDatabase(){
 
 function updateDatabase(){
     
-  window.location.href="../Databaselogin/UpdateDatabase/updatedatabase.html";
+  window.location.href="../Databaselogin/updatedatabase.html";
     
+    
+}
+
+
+function enterMasterPage(){
+    
+   window.location.href="../MasterPasswordLogin/masterpassword.html";
     
 }

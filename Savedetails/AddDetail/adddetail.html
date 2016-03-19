@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <head><link rel="stylesheet" href="adddetail.css" type="text/css"/></head>
+    <head>
+        <script type="text/javascript" src="adddetail.js"></script>
+    <link rel="stylesheet" href="adddetail.css" type="text/css"/></head>
     <body>
     
         <div>
@@ -9,13 +11,13 @@
                 
                     <div class="saveaccount">
                         
-                            <input class="account" type="text" placeholder="Enter Account Details" />   
-                            <input class="username" type="text" placeholder="Enter Username"/>  
-                            <input class="password" type="text" placeholder="Enter Password"/>  
-                            <input class="note" type="text" placeholder="Enter Note here"/>  
+                           <div class="input"> <input id="useraccountname" type="text"  placeholder="Enter Account Details" /><span class="tooltip">Enter Account Type</span><label id="labelaccountname">*</label></div>  
+                           <div class="input"> <input id="userid" type="text" placeholder="Enter Username"/> <span class="tooltip">Enter Account User ID</span><label id="labeluserid">*</label></div>
+                           <div class="input"> <input id="userpassword" type="text" placeholder="Enter Password Here"/> <span class="tooltip">Enter Account User Password</span><label id="labeluserpassword">*</label></div>
+                           <div class="input"> <input id="usernote" type="text" placeholder="Enter Note here" /> <span class="tooltip">Enter Note here</span><label id="labelusernote">*</label></div>
                             
-                            <button class="save" >Save</button> 
-                            <button  class="close" >Close</button>
+                            <input type="button" onclick="enterDetail()" value="SAVE" class="save" ></input> 
+                            <input type="button" value="CANCEL" class="close" ></input>
                 
                     </div>
         

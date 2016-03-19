@@ -4,6 +4,9 @@ var userPassword_Db=openDatabase('UserPasswordDb','1.0','This is userPassword Da
 
 
 
+
+
+
 function passwordVerification(){
     
     
@@ -132,8 +135,9 @@ var count=0;
      alert("Creating Master Password");
      
      insertMasterPassword(userPassword.value,userConfirmPassword.value);
-     
-     alert("Thanks Created");
+         alert("Thanks Created");
+     moveToMasterPage();
+ 
         
         
         
@@ -217,9 +221,9 @@ var passuserPassword=/^\w{8}|^\d{8}$/;
 
 
 
-function savepage(){
+function moveToMasterPage(){
     
-    window.location.href="../Savedetails/savedetails.html";
+    window.location.href="../Userpage/userpage.html";
 
     
 }

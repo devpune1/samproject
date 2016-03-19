@@ -9,11 +9,11 @@
         
             <div class="databasetxt" align="center">
                 
-                <input align="center" id="m_userpassword" type="password" placeholder="Enter Password Here" /><label id="labelpassword">*</label>
-                
-                <input align="center" id="m_userconfirmpassword" type="password" placeholder="Enter Confirmation Password"/><label id="labelconfirmpassword">*</label>
+              <div class="input"><input align="center" id="m_userpassword" type="password" placeholder="Enter Password Here" /><span class="tooltip">Enter Password Here</span><label id="labelpassword">*</label></div>
+                 
+              <div class="input"><input align="center" id="m_userconfirmpassword" type="password" placeholder="Enter Confirmation Password"/><span class="tooltip">Enter Confirmation Password</span><label id="labelconfirmpassword">*</label></div>
               
-                 <input class="btndone" type="button" onclick="updatedMasterPassword()" value="DONE"></input>
+                 <input class="btndone" type="button" onclick="passwordVerification()" value="DONE"></input>
             
                 <input class="btncancle" type="button" onclick="display()" value="CANCEL"></input>
              
